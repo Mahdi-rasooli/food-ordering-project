@@ -1,0 +1,203 @@
+/* /////////////// cards /////////////*/
+
+
+.cards{
+    margin-top: 100px;
+}
+
+
+.cards-items-title{
+    display: grid;
+    grid-template-columns: 1fr 1.1fr 1fr 1fr 1fr 0.5fr;
+    align-items: center;
+    color: grey;
+    font-size: max(1vw,12px);
+}
+
+
+
+.cards-items-item{
+    margin: 10px 0px;
+    color: black;
+}
+
+
+.cards-items-item img{
+    width: 50px;
+}
+
+
+.cards hr{
+    height: 1px;
+    border: none;
+    background-color: #e2e2e2;
+}
+
+.cards-items-item .cross{
+    cursor: pointer;
+    color: red;
+}
+
+
+.cards-bottom{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    gap: max(12vw,20px);
+}
+
+
+.cards-total{
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cards-total-details{
+    display: flex;
+    justify-content: space-between;
+    color: #555;
+}
+
+.cards-total hr{
+    margin: 8px 0px;
+}
+
+
+.cards-total button{
+    width: max(15vw,200px);
+    color: white;
+    background-color: tomato;
+    padding: 12px 0px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.cards-total button:hover{
+    background-color: hsl(9, 100%, 74%);
+}
+
+
+.cards-promocode{
+    flex: 1;
+}
+
+
+.cards-promocode p{
+    color: #555;
+}
+
+
+.cards-promocode-input{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eaeaea;
+    border-radius: 4px;
+}
+
+
+.cards-promocode-input input{
+    background-color: transparent;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+}
+
+
+.cards-promocode-input button{
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    padding: 15px 20px;
+    width: max(10vw,150px);
+    border: none;
+    cursor: pointer;
+}
+
+
+.cards-promocode-input button:hover{
+    background-color: hsl(0, 0%, 20%);
+}
+
+
+
+
+
+
+/* ///// responsive //// */
+
+
+
+
+@media (max-width:750px) {
+
+    .cards-bottom{
+        flex-direction: column-reverse;
+    }
+
+    .cards-promocode{
+        justify-content: start;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+/* /////////////// orders //////////////*/
+
+
+.place-order{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    margin-top: 100px;
+}
+
+.place-order-left{
+    width: 100%;
+    max-width: max(30%,500px);
+}
+
+.place-order-left .title{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+
+
+.place-order-left input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #c2c2c2;
+    border-radius: 4px;
+    outline-color: tomato;
+    margin-bottom: 15px;
+}
+
+.place-order-left .multi-fields{
+    display: flex;
+    gap: 10px;
+}
+
+.place-order-right{
+    width: 100%;
+    max-width: max(40%,500px);
+}
+
+.place-order-right .cards-total button{
+    margin-top: 10px;
+}
