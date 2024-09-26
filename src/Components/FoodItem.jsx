@@ -5,12 +5,12 @@ import { ContextStore } from '../context/ContextStore'
 function FoodItem({ id , name , description , image , price }) {
 
 
-    const { cardItems , addtoCard , removeFromCard} = useContext(ContextStore)
+    const { cardItems , addtoCard , removeFromCard , url} = useContext(ContextStore)
 
   return (
     <div className='food-item'>
         <div className="food-item-img-container">
-            <img className='food-item-img' src={image} alt="" />
+            <img className='food-item-img' src={url + '/images/' + image} alt="" />
             {!cardItems[id] 
                 ? <img onClick={() => addtoCard(id)} className='add' src={assets.add_icon_white}/>
                 : <div className='food-item-counter'>

@@ -6,6 +6,8 @@ import Cards from './Pages/Cards'
 import Orders from './Pages/Orders'
 import Footer from './Components/Footer'
 import LoginPopup from './Components/LoginPopup'
+import Verify from './Pages/verify/Verify'
+import MyOrders from './Pages/MyOrders/MyOrders'
 
 
 function App() {
@@ -20,8 +22,10 @@ function App() {
         <Navbar setShowLogin={setShowLogin}/>
         <Routes>
           <Route path='/' element={<Home/>}/>
-          <Route path='/card' element={<Cards/>}/>
+          <Route path='/cart' element={<Cards/>}/>
           <Route path='/orders' element={<Orders/>}/>
+          <Route path='/verify' element={<Verify/>}/>
+          <Route path='/myorders' element={<MyOrders/>}/>
         </Routes>
       </div>
       <Footer/>

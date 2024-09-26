@@ -7,7 +7,7 @@ function Cards() {
 
 
 
-  const { cardItems, food_list, removeFromCard , getTotalCardsAmount } = useContext(ContextStore)
+  const { cardItems, food_list, removeFromCard , getTotalCardsAmount , url} = useContext(ContextStore)
 
   const navigate = useNavigate()
 
@@ -29,7 +29,7 @@ function Cards() {
             return (
               <div>
                 <div className='cards-items-title cards-items-item'>
-                  <img src={item.image} alt="" />
+                  <img src={url + '/images/' + item.image} alt="" />
                   <p>{item.name}</p>
                   <p>${item.price}</p>
                   <p>{cardItems[item._id]}</p>
